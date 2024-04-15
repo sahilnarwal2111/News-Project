@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: polybot
-        image: sahilnarwal2111/finalbot:latest # TODO change IMG_URL to your polybot image in dockerhub or ECR
+        image: sahilnarwal2111/finalbot:latest # TODO change IMG_URL to your polybot image in dockrhub or ECR
