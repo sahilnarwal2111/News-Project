@@ -7,7 +7,7 @@ pipeline {
                  echo 'build step'
                  ls frontend  
                  cd frontend
-                 docker build -t frontendpipelineimage:${BUILD_NUMBER} .
+                 docker build -t frontendpipelineimage:${BUILD_NUMBER} . 
                 '''
             }
         }           
