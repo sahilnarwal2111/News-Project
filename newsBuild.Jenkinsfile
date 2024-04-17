@@ -10,7 +10,7 @@ pipeline {
                  docker build -t frontendpipelineimage:${BUILD_NUMBER} .
                 '''
             }
-        }
+        }           
 
     }
 }
