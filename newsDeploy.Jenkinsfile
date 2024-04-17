@@ -26,7 +26,7 @@ pipeline {
                     cd frontend
 		            temp=$FRONT_IMAGE_URL yq eval 'select(.kind == "Deployment").spec.template.spec.containers[0].image = env(temp)' frontend.yaml > test2.yaml
                     mv test2.yaml frontend.yaml
-                    kubectl apply -f frontend.yaml 
+                    kubectl apply -f frontend.yaml  
                     
                 '''
             }
