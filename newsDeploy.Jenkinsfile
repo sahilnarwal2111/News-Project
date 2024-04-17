@@ -14,7 +14,7 @@ pipeline {
         stage('Setting default namespace') {
             steps {
                     sh '''
-                    aws eks --region ${AWS_REGION_K8S} update-kubeconfig --name ${K8S_CLUSTER_NAME}
+                    aws eks --region ${AWS_REGION_K8S} update-kubeconfig --name ${K8S_CLUSTER_NAME} 
                         kubectl config set-context --current --namespace=${K8S_NAMESPACE}
                     '''
             }
