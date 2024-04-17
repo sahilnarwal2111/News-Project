@@ -10,7 +10,7 @@ YOLO_URL = f'http://yolo5:8081'
 class Bot:
     def __init__(self, token):
         self.bot = telebot.TeleBot(token, threaded=False)
-        self.bot.set_update_listener(self._bot_internal_handler)
+        self.bot.set_update_listener(self._bot_internal_handler) 
         self.current_msg = None
 
     def _bot_internal_handler(self, messages):
