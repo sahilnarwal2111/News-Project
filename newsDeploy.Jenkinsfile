@@ -7,7 +7,7 @@ pipeline {
      environment {
         AWS_REGION_K8S='us-east-2'
         K8S_CLUSTER_NAME='k8s-batch1'
-        K8S_NAMESPACE='sahilnarwal-ns'
+        K8S_NAMESPACE='sahilnarwal-ns' 
     }
 
     stages {
