@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   node:
-    image: sahilnarwal2111/reactapp4:latest
+    image: frontend-final-ad
     container_name: myapp-node
     volumes:
       - ./app:/myapp
@@ -10,7 +10,7 @@ services:
       - 3000:80
 
   python:
-    image: sahilnarwal2111/newsbot:latest
+    image: polybot-final
     container_name: myapp-python
     volumes:
       - ./app:/app
